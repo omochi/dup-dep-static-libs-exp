@@ -1,3 +1,7 @@
 import libA
 
-public func b() -> Int { a() + 1 }
+public struct B {
+    public init() {}
+    public func b() -> Int { A().a() + 1 }
+}
+

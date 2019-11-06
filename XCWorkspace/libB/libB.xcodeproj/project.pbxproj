@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D661EF48237273D6004D5FA1 /* libB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661EF47237273D6004D5FA1 /* libB.swift */; };
-		D661EF5223727446004D5FA1 /* liblibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D661EF5123727446004D5FA1 /* liblibA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D661EF5223727446004D5FA1 /* liblibA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +260,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +273,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -35,8 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D661EF77237274C9004D5FA1 /* liblibB.a in Frameworks */,
 				D661EF76237274C9004D5FA1 /* liblibA.a in Frameworks */,
+				D661EF77237274C9004D5FA1 /* liblibB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
