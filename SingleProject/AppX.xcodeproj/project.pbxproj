@@ -15,8 +15,7 @@
 		D661EF0323726CF3004D5FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D661EF0123726CF3004D5FA1 /* LaunchScreen.storyboard */; };
 		D661EF1123726D03004D5FA1 /* libA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661EF1023726D03004D5FA1 /* libA.swift */; };
 		D661EF1C23726D0F004D5FA1 /* libB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661EF1B23726D0F004D5FA1 /* libB.swift */; };
-		D661EF2123726D28004D5FA1 /* liblibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D661EF0E23726D03004D5FA1 /* liblibA.a */; };
-		D661EF2223726D59004D5FA1 /* liblibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D661EF0E23726D03004D5FA1 /* liblibA.a */; };
+		D661EF2223726D59004D5FA1 /* liblibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D661EF0E23726D03004D5FA1 /* liblibA.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D661EF2523726D59004D5FA1 /* liblibB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D661EF1923726D0F004D5FA1 /* liblibB.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D661EF1823726D0F004D5FA1;
 			remoteInfo = libB;
+		};
+		D661EF7823727B9C004D5FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D661EEEB23726CF1004D5FA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D661EF0D23726D03004D5FA1;
+			remoteInfo = libA;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D661EF2123726D28004D5FA1 /* liblibA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +214,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D661EF7923727B9C004D5FA1 /* PBXTargetDependency */,
 			);
 			name = libB;
 			productName = libB;
@@ -308,6 +314,11 @@
 			isa = PBXTargetDependency;
 			target = D661EF1823726D0F004D5FA1 /* libB */;
 			targetProxy = D661EF2623726D59004D5FA1 /* PBXContainerItemProxy */;
+		};
+		D661EF7923727B9C004D5FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D661EF0D23726D03004D5FA1 /* libA */;
+			targetProxy = D661EF7823727B9C004D5FA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
