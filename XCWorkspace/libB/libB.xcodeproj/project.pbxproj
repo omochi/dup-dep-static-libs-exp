@@ -10,6 +10,23 @@
 		D661EF48237273D6004D5FA1 /* libB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661EF47237273D6004D5FA1 /* libB.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		861C272623728F2700B5A6CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 861C272223728F2700B5A6CF /* libA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D661EF31237273C0004D5FA1;
+			remoteInfo = libA;
+		};
+		861C272823728F3800B5A6CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 861C272223728F2700B5A6CF /* libA.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D661EF30237273C0004D5FA1;
+			remoteInfo = libA;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D661EF42237273D6004D5FA1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		861C272223728F2700B5A6CF /* libA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libA.xcodeproj; path = ../libA/libA.xcodeproj; sourceTree = "<group>"; };
 		D661EF44237273D6004D5FA1 /* liblibB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D661EF47237273D6004D5FA1 /* libB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libB.swift; sourceTree = "<group>"; };
 		D661EF4F23727436004D5FA1 /* liblibA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibA.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,9 +58,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		861C272323728F2700B5A6CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				861C272723728F2700B5A6CF /* liblibA.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D661EF3B237273D6004D5FA1 = {
 			isa = PBXGroup;
 			children = (
+				861C272223728F2700B5A6CF /* libA.xcodeproj */,
 				D661EF46237273D6004D5FA1 /* libB */,
 				D661EF45237273D6004D5FA1 /* Products */,
 				D661EF4E23727436004D5FA1 /* Frameworks */,
@@ -88,6 +115,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				861C272923728F3800B5A6CF /* PBXTargetDependency */,
 			);
 			name = libB;
 			productName = libB;
@@ -120,12 +148,28 @@
 			mainGroup = D661EF3B237273D6004D5FA1;
 			productRefGroup = D661EF45237273D6004D5FA1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 861C272323728F2700B5A6CF /* Products */;
+					ProjectRef = 861C272223728F2700B5A6CF /* libA.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D661EF43237273D6004D5FA1 /* libB */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		861C272723728F2700B5A6CF /* liblibA.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibA.a;
+			remoteRef = 861C272623728F2700B5A6CF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D661EF40237273D6004D5FA1 /* Sources */ = {
@@ -137,6 +181,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		861C272923728F3800B5A6CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libA;
+			targetProxy = 861C272823728F3800B5A6CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D661EF49237273D6004D5FA1 /* Debug */ = {
@@ -260,7 +312,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,7 +324,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
